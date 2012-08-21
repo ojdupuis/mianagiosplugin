@@ -1,0 +1,8 @@
+[Compte Supervision]
+login=system
+password=lmiora250
+
+[Environnement]
+;; L'environnement n'est nécessaire que en dev sur segou car le php n'est pas compilé avec oci8
+TNS_ADMIN=/etc/oracle/
+ORACLE_HOME=/opt/app/oracle/product/10.2.0/db
