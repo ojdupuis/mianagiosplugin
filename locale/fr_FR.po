@@ -1,2 +1,0 @@
-msgid "start"
-msgstr "debut"
