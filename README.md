@@ -29,6 +29,6 @@ It is written in php 5.
 
 ## Screenshots
 
-![Screenshot](https://github.com/ojdupuis/mianagiosplugin/master/demo.png)
+![Screenshot](https://raw.github.com/ojdupuis/mianagiosplugin/master/demo.png)
 
 
