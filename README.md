@@ -9,11 +9,11 @@ It is written in php 5.
 - plugin help (-h) automatically generated
 - debug assistance (-v)
 - inheritance : availables classes for
-	- SNMP (simple or indexed data)
-        - Mysql
-	- Oracle 
-	- Redis
-	- unix file (age)
+  - SNMP (simple or indexed data)
+  - Mysql
+  - Oracle 
+  - Redis
+  - unix file (age)
 - filters for altering plugin output at different level.	
 - lots of samples
 - status and perfdata auto-formatting.
