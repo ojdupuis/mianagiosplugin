@@ -27,3 +27,8 @@ It is written in php 5.
 - documentation on main methods 
 - get rid of french messages !
 
+## Screenshots
+
+![Screenshot](https://github.com/ojdupuis/mianagiosplugin/blog/master/demo.png)
+
+
