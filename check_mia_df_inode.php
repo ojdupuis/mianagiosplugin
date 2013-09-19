@@ -1,4 +1,4 @@
-#!/usr/local/bin/php5 -q
+#!/usr/bin/php -q
 <?php
    require_once('lib/MiaNagiosPluginIndexed.inc.php');
 
@@ -26,7 +26,7 @@
          $this->setIndicatorUnit('inodes','%');
       }
       
-      protected function coreFunction(){
+      protected function _preliminarySetUp(){
          trigger_error("start",E_USER_NOTICE);
          exec('df -i | grep -vE "^Filesystem" | grep -v "/mnt/" | egrep -v "^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+"',$output);
          foreach ($output as $line){

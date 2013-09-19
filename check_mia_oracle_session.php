@@ -1,4 +1,4 @@
-#!/usr/local/bin/php5 -q
+#!/usr/bin/php -q
 <?php
    require_once('lib/MiaNagiosPluginOracleSimple.inc.php');
    
@@ -27,7 +27,7 @@
             
       }
 
-	protected function coreFunction(){
+	protected function _preliminarySetUp(){
          trigger_error('start',E_USER_NOTICE);
 	 $query='select * from (SELECT count(*) nb_sessions_actives FROM v$session WHERE status=\'ACTIVE\' AND username IS NOT NULL) actives, (SELECT count(distinct blocking_session) nb_sessions_bloquantes FROM v$session WHERE blocking_session IS NOT NULL) blocking, (SELECT count(*) nb_sessions_bloquees FROM v$session WHERE blocking_session IS NOT NULL) blocked';
          $query_output=$this->_executeQuery($query);

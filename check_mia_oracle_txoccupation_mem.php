@@ -1,4 +1,4 @@
-#!/usr/local/bin/php5 -q
+#!/usr/bin/php -q
 <?php
    require_once('lib/MiaNagiosPluginOracleSimple.inc.php');
    
@@ -25,7 +25,7 @@
          trigger_error('end',E_USER_NOTICE);   
       }
 
-      protected function coreFunction(){
+      protected function _preliminarySetUp(){
          trigger_error('start',E_USER_NOTICE);
          $query="SELECT free.val free_mb, tot.val tot_mb
 FROM (SELECT ROUND (SUM (BYTES) / 1048576, 2) val

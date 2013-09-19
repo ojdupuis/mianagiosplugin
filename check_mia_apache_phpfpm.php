@@ -1,4 +1,4 @@
-#!/usr/local/bin/php5 -q
+#!/usr/bin/php -q
 <?php
    require_once('lib/MiaNagiosPluginSimple.inc.php');
 
@@ -37,7 +37,7 @@
        * (non-PHPdoc)
        * @see nagios/plugins/lib/MiaNagiosPlugin#setIndicators()
        */
-      protected function coreFunction(){      
+      protected function _preliminarySetUp(){      
          trigger_error("start",E_USER_NOTICE);
          $output=file_get_contents("http://".$this->getInput('host')."/supervision/php/index.php5");
          $retour=1;

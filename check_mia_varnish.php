@@ -1,4 +1,4 @@
-#!/usr/local/bin/php5 -q
+#!/usr/bin/php -q
 <?php
    require_once('lib/MiaNagiosPluginSimple.inc.php');
 
@@ -42,7 +42,7 @@
       }
 
 
-      protected function coreFunction(){
+      protected function _preliminarySetUp(){
          trigger_error("start",E_USER_NOTICE);
           if ($this->getInput('instance') != ''){
               $instance="-n ".$this->getInput('instance');

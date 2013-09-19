@@ -1,4 +1,4 @@
-#!/usr/local/bin/php5 -q
+#!/usr/bin/php -q
 <?php
    require_once('lib/MiaNagiosPluginSimple.inc.php');
 
@@ -32,7 +32,7 @@
 	 $this->addInput('max_delta','/(\-d)\s([^\s]+)/');
       }
       
-      protected function coreFunction(){
+      protected function _preliminarySetUp(){
          trigger_error("start",E_USER_NOTICE);
          exec("sudo /usr/sbin/bconsole <<EOF\nstatus client=".$this->getInput('host')."-fd\nEOF",$output);
          trigger_error("output bconsole ".serialize($output),E_USER_NOTICE); 
