@@ -1,4 +1,4 @@
-#!/usr/local/bin/php5 -q
+#!/usr/bin/php -q
 <?php
    require_once('lib/MiaNagiosPluginOracleIndexed.inc.php');
    
@@ -36,7 +36,7 @@
             
       }
       
-      protected function coreFunction(){
+      protected function _preliminarySetUp(){
          trigger_error('start',E_USER_NOTICE);         
          $query_output=$this->_executeQuery($this->query);
          foreach ($query_output['OBJECT_TYPE'] as $i => $name){

@@ -22,6 +22,7 @@ It is written in php 5.
 - php 5.3+ on monitored hosts
 - php modules for certain classes (Oracle, Redis...)
 - nrpe on monitored hosts (plus config to execute plugins)
+- mx4j on cassandra monitored hosts
 
 ## TODO
 - documentation on main methods 

@@ -1,4 +1,4 @@
-#!/usr/local/bin/php5 -q
+#!/usr/bin/php -q
 <?php
    require_once('lib/MiaNagiosPluginSimple.inc.php');
 
@@ -35,9 +35,9 @@
 
       /**
        * (non-PHPdoc)
-       * @see nagios/plugins/lib/MiaNagiosPlugin#coreFunction()
+       * @see nagios/plugins/lib/MiaNagiosPlugin#_preliminarySetUp()
        */      
-      protected function coreFunction(){      
+      protected function _preliminarySetUp(){      
          trigger_error("start",E_USER_NOTICE);
          $output=file_get_contents("http://".$this->getInput('host')."/supervision/apc/apc_cache.php5");
          if ($output === false) {            

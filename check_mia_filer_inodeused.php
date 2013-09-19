@@ -1,4 +1,4 @@
-#!/usr/local/bin/php5 -q
+#!/usr/bin/php -q
 <?php
    require_once('lib/MiaNagiosPluginSNMPIndexed.inc.php');
    require_once('lib/MiaNagiosPluginIndexed.inc.php');
@@ -76,7 +76,7 @@ class MiaNagiosPlugin_CheckFilerInodePercentUsed extends MiaNagiosPluginIndexed{
     * (non-PHPdoc)
     * @see nagios/plugins/lib/MiaNagiosPlugin#setIndicators()
     */
-   protected function coreFunction(){   
+   protected function _preliminarySetUp(){   
       trigger_error('start',E_USER_NOTICE);
       
       $this->objet_usedfree=new MiaNagiosPlugin_CheckFilerInodeUsedFree();

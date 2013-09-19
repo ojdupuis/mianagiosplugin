@@ -1,4 +1,4 @@
-#!/usr/local/bin/php5 -q
+#!/usr/bin/php -q
 <?php
    require_once('lib/MiaNagiosPluginSimple.inc.php');
    
@@ -26,9 +26,9 @@
       
       /**
        * (non-PHPdoc)
-       * @see miadm/bin/nagios/plugins/lib/MiaNagiosPluginSNMPSimple#coreFunction()
+       * @see miadm/bin/nagios/plugins/lib/MiaNagiosPluginSNMPSimple#_preliminarySetUp()
        */
-      protected function coreFunction(){
+      protected function _preliminarySetUp(){
          trigger_error("start",E_USER_NOTICE);
          exec('uptime',$output);
         

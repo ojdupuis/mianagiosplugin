@@ -1,4 +1,4 @@
-#!/usr/local/bin/php5 -q
+#!/usr/bin/php -q
 <?php
    require_once('lib/MiaNagiosPluginSNMPIndexed.inc.php');
    /*
